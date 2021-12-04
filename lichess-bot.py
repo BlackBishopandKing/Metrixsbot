@@ -308,7 +308,7 @@ def play_game(li, game_id, control_queue, engine_factory, user_profile, config, 
         except StopIteration:
             break
 
-    conversation.send_reply(SendLine('player'), f'Good Game!')
+    conversation.send_reply(SendLine('player'), f'Good Game @{opponent}!')
     conversation.send_reply(SendLine('spectator'), f'Thanks for watch my Game!')
     
     engine.stop()
